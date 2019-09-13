@@ -29,6 +29,7 @@
 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   <!-- instafeed JavaScript -->
+<script src="  https://cdnjs.cloudflare.com/ajax/libs/jquery.pjax/2.0.1/jquery.pjax.min.js"></script>
 <script src="js/instafeed.min.js"></script>
 
 
@@ -438,10 +439,10 @@
 
   <script>
     var feed = new Instafeed({
-            get: 'user',
-            userId: '3204156793',
             clientId: 'e0b19cd88c9f4b95b1874a04dae368a7',
             accessToken: '3204156793.e0b19cd.3ce7b010b2d74dac86de1c375a16fa75',
+            get: 'user',
+            userId: '3204156793',
             template: '<a href="{{link}}"><img class="insta-image" src="{{image}}" /></a>'
         });
         feed.run();
